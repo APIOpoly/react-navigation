@@ -42,6 +42,8 @@ const DefaultDrawerConfig = {
   drawerCloseRoute: 'DrawerClose',
   drawerToggleRoute: 'DrawerToggle',
   drawerPosition: 'left',
+  drawerType: 'overlay',
+  drawerResponsiveWidth: 767,
   drawerBackgroundColor: 'white',
   useNativeAnimations: true,
 };
@@ -55,6 +57,8 @@ const DrawerNavigator = (routeConfigs, config = {}) => {
     contentComponent,
     contentOptions,
     drawerPosition,
+    drawerType,
+    drawerResponsiveWidth,
     useNativeAnimations,
     drawerBackgroundColor,
     drawerOpenRoute,
@@ -94,6 +98,8 @@ const DrawerNavigator = (routeConfigs, config = {}) => {
         contentComponent={contentComponent}
         contentOptions={contentOptions}
         drawerPosition={drawerPosition}
+        drawerType={drawerType}
+        drawerResponsiveWidth={drawerResponsiveWidth}
         drawerOpenRoute={drawerOpenRoute}
         drawerCloseRoute={drawerCloseRoute}
         drawerToggleRoute={drawerToggleRoute}

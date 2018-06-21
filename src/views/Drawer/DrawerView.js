@@ -176,6 +176,8 @@ export default class DrawerView extends React.PureComponent {
         onDrawerClose={this._handleDrawerClose}
         useNativeAnimations={this.props.useNativeAnimations}
         renderNavigationView={this._renderNavigationView}
+        drawerType={this.props.drawerType}
+        drawerResponsiveWidth={this.props.drawerResponsiveWidth}
         drawerPosition={
           this.props.drawerPosition === 'right'
             ? DrawerLayout.positions.Right
